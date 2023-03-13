@@ -1,8 +1,6 @@
-import React from "react";
-
-export default function Navbar(props) {
+const Navbar = (props) => {
   return (
-    <nav className={props.darkMode ? "dark" : ""}>
+    <nav className={props.darkMode && "dark"}>
       <img
         className="nav--logo_icon"
         src="./images/react-icon-small.png"
@@ -19,4 +17,5 @@ export default function Navbar(props) {
       </div>
     </nav>
   );
-}
+};
+export default Navbar;

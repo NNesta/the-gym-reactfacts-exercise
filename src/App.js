@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 
-export default function App() {
+const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -13,4 +13,5 @@ export default function App() {
       <Main darkMode={darkMode} />
     </div>
   );
-}
+};
+export default App;
